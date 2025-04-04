@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushilkumar Solunke | Product Management Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <header>
+    <img src="assets/profile.jpg" alt="Sushilkumar Solunke" class="profile-pic" />
+    <h1>Sushilkumar Solunke</h1>
+    <p>Product Management Portfolio</p>
+    <button id="theme-toggle">Switch Theme</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Versatile professional with 1.3 years of experience in product management. Currently working on the Naadi Inventory project at EYWATREE TECHNOLOGIES, focusing on SaaS development, inventory management, and cross-functional collaboration. Skilled in user research, backlog management, and system design.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Naadi Inventory</h3>
+      <p>Developed an inventory management system to replace manual tracking (Google Sheets). Implemented real-time stock monitoring, tracking (serialized & non-serialized), and reporting integrations with other Naadi products.</p>
+    </div>
+    <div class="project">
+      <h3>Kadavil Kraft</h3>
+      <p>Led branding and user experience for handcrafted Indian products. Focused on digital presence, storytelling, and packaging design to attract global audiences.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Product Management Intern</strong> – EYWATREE TECHNOLOGIES<br />
+        <em>Dec 2024 – Present, Bengaluru</em><br />
+        • Defined product requirements, collaborated cross-functionally, and tracked performance metrics.
+      </li>
+      <li>
+        <strong>Product Intern</strong> – Lemion Global<br />
+        <em>Aug 2024 – Dec 2024, Thane</em><br />
+        • Worked on UI/UX, content strategy, marketing, and Agile project management.
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Jira, Figma, Microsoft Office</li>
+      <li>UI/UX Design, System Design, SQL</li>
+      <li>Agile, PRD Writing, Roadmap & Backlog Management</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="assets/Sushilkumar-Solunke-FlowCV-Resume-20250404.pdf" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sushilsolunke42@gmail.com">sushilsolunke42@gmail.com</a></p>
+    <p>Phone: 08010176717</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sushilkumar Solunke. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themes = ['theme-light', 'theme-dark', 'theme-colorful'];
+    let currentThemeIndex = 0;
+    
+    themeToggle.addEventListener('click', () => {
+      body.classList.remove(themes[currentThemeIndex]);
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      body.classList.add(themes[currentThemeIndex]);
+    });
+  </script>
+</body>
+</html>

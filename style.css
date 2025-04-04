@@ -1,0 +1,82 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  padding: 1.5rem 2rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Theme 1: Light */
+body.theme-light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.theme-light a {
+  color: #0056b3;
+}
+
+body.theme-light header,
+body.theme-light footer {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Theme 2: Dark */
+body.theme-dark {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+body.theme-dark a {
+  color: #8ab4f8;
+}
+
+body.theme-dark header,
+body.theme-dark footer {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+/* Theme 3: Colorful */
+body.theme-colorful {
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  color: #333;
+}
+
+body.theme-colorful a {
+  color: #d15d5d;
+}
+
+body.theme-colorful header,
+body.theme-colorful footer {
+  background-color: #f4edea;
+  border-bottom: 1px solid #c8b6a6;
+}
+
+/* Common Styles */
+.project {
+  margin-bottom: 1.2rem;
+}
+
+ul {
+  list-style: square inside;
+}
+
+a {
+  text-decoration: none;
+}
